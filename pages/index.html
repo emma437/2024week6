@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <main>
+      <div class="section1 mt-10 pb-10">
+        <div class="container">
+          <div class="rounded-3 position-relative">
+            <picture>
+              <source
+                media="(min-width: 992px)"
+                srcset="/assets/images/2024-week6/banner.png"
+              />
+              <img src="/assets/images/2024-week6/banner-sm.png" alt="banner" />
+            </picture>
+            <div
+              class="container position-absolute top-50 translate-middle-y text-neutral-100 ms-9"
+            >
+              <h3 class="fs-lg-5 fs-6 mb-4">獻給新世代的生活風格誌</h3>
+              <h2 class="col-md-8 fs-lg-1 fs-3 mb-4">一起探索生活的無限可能</h2>
+              <button class="btn btn-accent-200 fs-5" type="button">
+                馬上訂閱
+                <i class="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="section2 mt-10">
+        <div class="container">
+          <h2 class="">熱門主題</h2>
+          <div class="row gy-lg-5">
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-1.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-1-sm.png"
+                  alt="theme-1-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-3.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-3-sm.png"
+                  alt="theme-2-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-5.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-5-sm.png"
+                  alt="theme-3-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-8.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-8-sm.png"
+                  alt="theme-4-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-2.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-2-sm.png"
+                  alt="theme-5-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-4.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-4-sm.png"
+                  alt="theme-6-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-6.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-6-sm.png"
+                  alt="theme-7-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <picture>
+                <source
+                  media="(min-width: 992px)"
+                  srcset="/assets/images/2024-week6/theme-7.png"
+                />
+                <img
+                  src="/assets/images/2024-week6/theme-7-sm.png"
+                  alt="theme-8-sm"
+                  class="w-100"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
