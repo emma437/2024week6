@@ -1,39 +1,67 @@
-.section4 {
+.theme-card {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba($color: #21252966, $alpha: 0.4);
+    opacity: 0;
+  }
+  &:hover::before {
+    opacity: 1;
+  }
+}
+
+.st4-container {
   width: 100%;
   position: relative;
+  &::after {
+    content: "";
+    display: block;
+    width: 217px;
+    height: 75px;
+    background-image: url(/assets/images/2024-week6/bg-1.png);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  &::before {
+    content: "";
+    display: block;
+    width: 300px;
+    height: 185px;
+    z-index: 2;
+    background-image: url(/assets/images/2024-week6/bg-2.png);
+    position: absolute;
+    bottom: 0;
+    right: 0%;
+  }
 }
-.section4::after {
-  content: "";
-  width: 217px;
-  height: 81px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+.section5 {
+  .mySwiper1 {
+    display: none;
+  }
 }
-// .swiper-slide {
-//   border-bottom: 1px solid #6c757d;
-// }
-// .swiper-slide img {
-//   display: block;
-//   width: 100%;
-//   height: 192px;
-//   object-fit: cover;
-// }
+
 .swiper-pagination {
   width: 232px;
   height: 32px;
   position: relative;
-}
-.swiper-pagination::after {
-  content: "";
-  width: 80px;
-  height: 1px;
-  background-color: #6c757d;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%);
+  &::after {
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: #6c757d;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .swiper-prev:hover {
@@ -57,6 +85,16 @@
 }
 
 // .swiper-slide {
+//   border-bottom: 1px solid #6c757d;
+// }
+// .swiper-slide img {
+//   display: block;
+//   width: 100%;
+//   height: 192px;
+//   object-fit: cover;
+// }
+
+// .swiper-slide {
 //   text-align: center;
 //   font-size: 18px;
 //   background: #fff;
@@ -72,6 +110,9 @@
 //   object-fit: cover;
 // }
 
+.list-group-text:hover {
+  color: #569573;
+}
 .myBtn:hover {
   background-color: $accent-300;
 }
@@ -109,5 +150,27 @@
     position: absolute;
     top: 70%;
     left: 10%;
+    width: 120px;
+  }
+  .st4-container::after {
+    display: none;
+  }
+  .st4-container::before {
+    overflow: hidden;
+    max-width: 130px;
+    height: 90px;
+    background-image: url(/assets/images/2024-week6/bg-2-sm.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    transform: translateX(-30%);
+  }
+  .myListgrup,
+  .myListitem {
+    display: none;
+  }
+  .section5 {
+    .mySwiper1 {
+      display: block;
+    }
   }
 }
