@@ -48,6 +48,18 @@
   }
 }
 
+.section7 {
+  .mySwiper2 {
+    display: none;
+  }
+}
+
+.section8 {
+  .context3 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .swiper-pagination {
   width: 232px;
   height: 32px;
@@ -173,7 +185,28 @@
       display: block;
     }
   }
+  .section7 {
+    .mySwiper2 {
+      display: block;
+    }
+  }
   .myBtn1 {
     display: none;
+  }
+  .context1 {
+    display: none;
+  }
+  .section7 {
+    .context2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .section8 {
+    .context3 {
+      display: inline;
+      text-align: center;
+    }
   }
 }

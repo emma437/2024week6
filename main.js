@@ -26,3 +26,7 @@ var swiper = new Swiper(".mySwiper", {
 var swiper = new Swiper(".mySwiper1", {
   spaceBetween: 24,
 });
+
+var swiper = new Swiper(".mySwiper2", {
+  spaceBetween: 12,
+});
