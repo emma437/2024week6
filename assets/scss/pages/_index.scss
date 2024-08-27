@@ -141,12 +141,12 @@
   .swiper-prev {
     position: absolute;
     top: 50%;
-    left: 60%;
+    left: 50%;
   }
   .swiper-next {
     position: absolute;
     top: 50%;
-    left: 130%;
+    left: 120%;
   }
   .swiper-pagination::after {
     content: "";
@@ -155,7 +155,7 @@
     background-color: #6c757d;
     position: absolute;
     top: 120%;
-    left: 100%;
+    left: 90%;
     transform: translateX(-30%);
   }
   .swiper-pagination-custom {
