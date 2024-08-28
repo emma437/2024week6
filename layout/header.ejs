@@ -19,8 +19,22 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="input-group w-25">
+        <div class="input1 input-group rounded-pill border">
+          <label
+            class="search input-group-text border-0 search-text ps-4 py-2 rounded-start-pill"
+            for="search"
+            >搜尋文章</label
+          >
           <input
+            type="text"
+            class="form-control input-group border-0"
+            id="search"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <a href="#" class="input-group-text border-0 rounded-end-pill">
+            <i class="bi bi-search text-accent-300"></i>
+          </a>
+          <!-- <input
             type="text"
             class="form-control rounded-start-pill"
             placeholder="搜尋文章"
@@ -33,11 +47,16 @@
             id="button-addon2"
           >
             <i class="bi bi-search text-accent-300"></i>
-          </button>
+          </button> -->
         </div>
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
           <li class="nav-item me-4">
-            <a class="nav-link active" aria-current="page" href="#">所有文章</a>
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/pages/context.html"
+              >所有文章</a
+            >
           </li>
           <li class="nav-item me-4">
             <a class="nav-link" href="#">訂閱方案</a>

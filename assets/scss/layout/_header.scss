@@ -1,6 +1,24 @@
-.btn1 {
-  width: 276px;
+.input-group:focus-within .search-text {
+  color: #212529;
+  font-weight: bold;
 }
-.btn1:hover {
-  color: black;
+
+#search:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.collapse {
+  .input1 {
+    width: 25%;
+  }
+}
+
+@media (max-width: 992px) {
+  .collapse {
+    .input1 {
+      width: 100%;
+    }
+  }
 }
