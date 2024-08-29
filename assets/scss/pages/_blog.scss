@@ -16,4 +16,18 @@
 }
 
 @media (max-width: 992px) {
+  .text1 {
+    display: none;
+  }
+  .text2 {
+    display: block;
+  }
+  .overflow {
+    overflow-x: scroll;
+  }
+  .section3 {
+    .myCard1 {
+      width: 991px;
+    }
+  }
 }
