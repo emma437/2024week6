@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>context</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" crossorigin src="/web-layout-training-vite/assets/main-22b019df.js"></script>
+    <link rel="stylesheet" href="/web-layout-training-vite/assets/main-56fa6cd4.css">
+  </head>
+  <body>
+    <header>
+  <nav class="navbar navbar-expand-lg body-bg mt-lg-7">
+    <div class="container pb-lg-7 border-bottom">
+      <a class="navbar-brand" href="/pages/index.html">
+        <img
+          src="data:image/png;base64,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"
+          alt="logo-image"
+          style="width: 96px; height: 28px"
+      /></a>
+      <button
+        class="navbar-toggler border-primary-100"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="input1 input-group rounded-pill border">
+          <label
+            class="search input-group-text border-0 search-text ps-4 py-2 rounded-start-pill"
+            for="search"
+            >搜尋文章</label
+          >
+          <input
+            type="text"
+            class="form-control input-group border-0"
+            id="search"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <a href="#" class="input-group-text border-0 rounded-end-pill">
+            <i class="bi bi-search text-accent-300"></i>
+          </a>
+          <!-- <input
+            type="text"
+            class="form-control rounded-start-pill"
+            placeholder="搜尋文章"
+            aria-label="Recipient's username"
+            aria-describedby="button-addon2"
+          />
+          <button
+            class="btn bg-light border border-start-0"
+            type="button"
+            id="button-addon2"
+          >
+            <i class="bi bi-search text-accent-300"></i>
+          </button> -->
+        </div>
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+          <li class="nav-item me-4">
+            <a
+              class="nav-link active"
+              aria-current="page"
+              href="/pages/blog.html"
+              >所有文章</a
+            >
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">訂閱方案</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="#">關於我們</a>
+          </li>
+          <li class="d-grid d-md-block">
+            <a class="myBtn btn btn-accent-200 text-neutral-100" href="#"
+              >登入 / 註冊
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+    <div class="section1">
+      <div class="container-lg">
+        <div class="row">
+          <div class="mx-auto">
+            <picture>
+              <source
+                media="(min-width: 576px)"
+                srcset="/web-layout-training-vite/assets/article-banner-2da53661.png "
+              />
+
+              <img
+                src="/web-layout-training-vite/assets/article-banner-sm-e9da1f9f.png"
+                alt="article-banner"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section2 mt-10 mb-9">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 mx-auto">
+            <nav aria-label="breadcrumb ">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/pages/index.html">首頁</a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">所有文章</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  私人島嶼的露營奇遇記
+                </li>
+              </ol>
+            </nav>
+            <p class="fs-lg-2 fs-4 fw-bolder mt-4">私人島嶼的露營奇遇記</p>
+            <p class="date text-neutral-400 mb-lg-7 mb-5">2024/5/1</p>
+            <div class="gradient-overlay">
+              <p class="mb-lg-7 text">
+                嗨！我是秘境尋蹤小編
+                Elly，很高興能與你分享我這段令人心曠神怡的旅程。這不僅僅是一次旅行，更是一場對自然、對內心的深度體悟，一次重新與大自然連結的奇妙旅程。希望透過我的分享，你也能感受到這份自然之美，並找到一份屬於自己的心靈寧靜。
+              </p>
+              <p class="mb-lg-7 mb-4 text">
+                這段旅程的開始，是從一個遙遠的小島。我對於這片土地的認識，僅止於一些遊記和照片，對於它的神秘感與未知感讓我充滿了好奇。一艘小船，帶著我穿越海浪，穿過風暴，終於抵達了這片被大自然雕琢的寶地。當我踏上這片島嶼的那一刻，心中充滿了震撼與喜悅。
+              </p>
+              <div class="mb-lg-7">
+                <picture>
+                  <source
+                    media="(min-width: 992px)"
+                    srcset="/web-layout-training-vite/assets/content-1-b1d7a29a.png "
+                  />
+
+                  <img
+                    src="/web-layout-training-vite/assets/content-1-sm-9961c35e.png"
+                    class="w-100"
+                    alt="content-1"
+                  />
+                </picture>
+              </div>
+            </div>
+            <p class="text1 fw-bold text-center mb-3 mt-4">
+              本篇為會員專屬文章，馬上訂閱瀏覽所有內容！
+            </p>
+            <div class="text2 mx-auto">
+              <p class="fw-bold text-center mt-4">本篇為會員專屬文章</p>
+              <p class="fw-bold text-center mb-3">馬上訂閱瀏覽所有內容！</p>
+            </div>
+            <div class="d-flex justify-content-center align-items-center">
+              <button
+                class="myBtn btn btn-accent-200 fs-lg-5 fs-6 text-primary-100 mb-lg-8"
+                type="button"
+              >
+                我要訂閱
+                <i class="bi bi-arrow-right ps-1"> </i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section3">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h4 class="fs-lg-2 mb-lg-7 mb-4 fs-4">延伸閱讀</h4>
+
+            <div class="overflow">
+              <div class="d-flex gap-4 flex-lg-column myCard1">
+                <div class="card border-0 border-bottom pb-5 mb-lg-7">
+                  <div class="d-flex flex-column flex-lg-row g-0">
+                    <div class="">
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="/web-layout-training-vite/assets/read-1-7447f302.png "
+                        />
+                        <img
+                          class="w-100"
+                          src="/web-layout-training-vite/assets/read-1-sm-01407a34.png"
+                          alt="read-1-sm"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="card-body ps-0 ps-lg-3">
+                        <h5 class="card-title text-truncate">
+                          週末說走就走露營記
+                        </h5>
+                        <h6 class="card-text fw-semibold text-neutral-500">
+                          遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜...
+                        </h6>
+                        <div class="d-flex justify-content-end mt-4">
+                          <a href="#" class="text-accent-200 fs-5">Read More</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 border-bottom pb-5 mb-lg-7">
+                  <div class="d-flex flex-column flex-lg-row g-0 g-0">
+                    <div class="">
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="/web-layout-training-vite/assets/read-2-9172e3e2.png "
+                        />
+                        <img
+                          class="w-100"
+                          src="/web-layout-training-vite/assets/read-2-sm-24c5fd2f.png"
+                          alt="read-2-sm"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="card-body ps-0 ps-lg-3">
+                        <h5 class="card-title text-truncate">城市野營日記</h5>
+                        <h6 class="card-text fw-semibold text-neutral-500">
+                          終於!我實現了一個看似瘋狂的想法—在熟悉的城市裡野營一晚。說實話,一開始我也有點懷疑自己,畢竟眾目睽睽之下搭帳篷實在有點怪異。不過漸漸地,這股初時的侷促不...
+                        </h6>
+                        <div class="d-flex justify-content-end mt-4">
+                          <a href="#" class="text-accent-200 fs-5 mt-auto"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card border-0 border-bottom pb-5 mb-lg-10">
+                  <div class="d-flex flex-column flex-lg-row g-0 g-0">
+                    <div class="col-lg-3">
+                      <picture>
+                        <source
+                          media="(min-width: 768px)"
+                          srcset="/web-layout-training-vite/assets/read-3-84996d96.png "
+                        />
+                        <img
+                          class="w-100"
+                          src="/web-layout-training-vite/assets/read-3-sm-0df9b892.png"
+                          alt="read-3-sm"
+                        />
+                      </picture>
+                    </div>
+                    <div class="col-lg-9">
+                      <div class="card-body ps-0 ps-lg-3">
+                        <h5 class="card-title text-truncate">
+                          和寵物去露營 - 大自然之旅的雙倍體驗
+                        </h5>
+                        <h6 class="card-text fw-semibold text-neutral-500">
+                          說實話,一開始我有點擔心帶著我的狗狗露營會不會太麻煩。畢竟要照顧牠的飲食起居,還得注意牠的安全。不過這次經驗讓我徹底改觀了!出發前,我特意為狗狗準備了適當...
+                        </h6>
+                        <div class="d-flex justify-content-end mt-4">
+                          <a href="#" class="text-accent-200 fs-5 pt-auto"
+                            >Read More</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+  <div class="container">
+    <hr />
+    <h6 class="text-primary-400 text-center">©Vivre 2024 All right Reserved</h6>
+  </div>
+</div>
+
+    
+  </body>
+</html>
